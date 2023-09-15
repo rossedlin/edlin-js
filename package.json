@@ -4,5 +4,5 @@
   "main": "index.js",
   "author": "Ross Edlin <code@codewithross.com>",
   "homepage": "https://www.codewithross.com/",
-  "license": "ISC"
+  "license": "MIT"
 }
