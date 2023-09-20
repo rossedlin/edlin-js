@@ -8,7 +8,7 @@ module.exports = class Post {
     return this.post.link_url + '/' + this.post.slug;
   }
 
-  getImageUrl() {
+  getImageUrl(size = 'small', fallback = 'https://wp.rossedlin.com/wp-content/uploads/2020/05/home-office-4980353-400x266.jpg') {
 
     if (this.post['_embedded'] && this.post['_embedded']['wp:featuredmedia']) {
       if (this.post['_embedded']['wp:featuredmedia'][0]['media_details']['sizes']) {
@@ -17,13 +17,13 @@ module.exports = class Post {
         /**
          *
          */
-        if (sizes['blog_post']) {
-          return sizes['blog_post']['source_url'];
+        if (sizes[size]) {
+          return sizes[size]['source_url'];
         }
       }
     }
 
-    return '';
+    return fallback;
   }
 
   getTitle() {
