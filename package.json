@@ -7,7 +7,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rossedlin/edlin-js.git"
+    "url": "git+https://github.com/rossedlin/edlin-js.git"
   },
   "scripts": {
     "test": "jest"
