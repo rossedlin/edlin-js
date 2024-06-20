@@ -7,7 +7,8 @@ test('Getting a WordPress POST using Headless form a slug.', async () => {
     expect(post).toEqual(expect.objectContaining({
         id: expect.any(Number),
         status: expect.any(String),
-        name: expect.any(String),
+        slug: 'stripe-laravel',
+        title: expect.any(String),
         content: expect.any(String)
     }));
 });
