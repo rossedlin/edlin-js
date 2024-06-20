@@ -2,7 +2,7 @@ const GetPostFromSlug = require('../../../Headless/Api/GetPostFromSlug');
 
 test('string with a single number should result in the number itself', async () => {
 
-    post = await GetPostFromSlug('https://wp.codewithross.com/', 'stripe-laravel');
+    const post = await GetPostFromSlug('https://wp.codewithross.com/', 'stripe-laravel');
 
     console.log(post);
 
