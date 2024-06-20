@@ -1,4 +1,4 @@
-name: Test NPM Package
+name: Test
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
     branches: [ "master" ]
 
 jobs:
-  Build:
+  build:
+    name: Unit Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,8 +18,8 @@ jobs:
       - run: npm ci
       - run: npm test
 
-  SonarQube:
-    name: Build and analyze
+  sonarqube:
+    name: SonarQube
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
