@@ -2,7 +2,7 @@ const GetCourses = require('../../../LearnPress/Api/GetCourses');
 
 test('string with a single number should result in the number itself', async () => {
 
-    const courses = await GetCourses('https://wp.codewithross.com/');
+    const courses = await GetCourses('https://wp-edlinjs.edlin.app/');
 
     expect(courses).toEqual(
         expect.arrayContaining([
