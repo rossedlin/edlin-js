@@ -1,0 +1,276 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "slug": {
+        "type": "string"
+      },
+      "permalink": {
+        "type": "string"
+      },
+      "image": {
+        "type": "string"
+      },
+      "date_created": {
+        "type": "string"
+      },
+      "date_created_gmt": {
+        "type": "string"
+      },
+      "date_modified": {
+        "type": "string"
+      },
+      "date_modified_gmt": {
+        "type": "string"
+      },
+      "on_sale": {
+        "type": "boolean"
+      },
+      "status": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "excerpt": {
+        "type": "string"
+      },
+      "duration": {
+        "type": "string"
+      },
+      "count_students": {
+        "type": "number"
+      },
+      "can_finish": {
+        "type": "boolean"
+      },
+      "can_retake": {
+        "type": "number"
+      },
+      "ratake_count": {
+        "type": "number"
+      },
+      "rataken": {
+        "type": "number"
+      },
+      "rating": {
+        "type": "boolean"
+      },
+      "price": {
+        "type": "number"
+      },
+      "price_rendered": {
+        "type": "string"
+      },
+      "origin_price": {
+        "type": "number"
+      },
+      "origin_price_rendered": {
+        "type": "string"
+      },
+      "sale_price": {
+        "type": "number"
+      },
+      "sale_price_rendered": {
+        "type": "string"
+      },
+      "categories": {
+        "type": "array",
+        "items": {}
+      },
+      "tags": {
+        "type": "array",
+        "items": {}
+      },
+      "instructor": {
+        "type": "object",
+        "properties": {
+          "avatar": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "avatar"
+        ]
+      },
+      "sections": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number"
+            },
+            "title": {
+              "type": "string"
+            },
+            "course_id": {
+              "type": "number"
+            },
+            "description": {
+              "type": "string"
+            },
+            "order": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "preview": {
+                    "type": "boolean"
+                  },
+                  "duration": {
+                    "type": "string"
+                  },
+                  "graduation": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string"
+                  },
+                  "locked": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "id",
+                  "type",
+                  "title",
+                  "preview",
+                  "duration",
+                  "graduation",
+                  "status",
+                  "locked"
+                ]
+              }
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "course_id",
+            "description",
+            "order",
+            "items"
+          ]
+        }
+      },
+      "course_data": {
+        "type": "object",
+        "properties": {
+          "graduation": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "end_time": {},
+          "expiration_time": {
+            "type": "string"
+          },
+          "result": {
+            "type": "object",
+            "properties": {
+              "count_items": {
+                "type": "number"
+              },
+              "completed_items": {
+                "type": "number"
+              },
+              "items": {
+                "type": "array",
+                "items": {}
+              },
+              "evaluate_type": {
+                "type": "string"
+              },
+              "pass": {
+                "type": "number"
+              },
+              "result": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "count_items",
+              "completed_items",
+              "items",
+              "evaluate_type",
+              "pass",
+              "result"
+            ]
+          }
+        },
+        "required": [
+          "graduation",
+          "status",
+          "start_time",
+          "end_time",
+          "expiration_time",
+          "result"
+        ]
+      },
+      "meta_data": {
+        "type": "array",
+        "items": {}
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "slug",
+      "permalink",
+      "image",
+      "date_created",
+      "date_created_gmt",
+      "date_modified",
+      "date_modified_gmt",
+      "on_sale",
+      "status",
+      "content",
+      "excerpt",
+      "duration",
+      "count_students",
+      "can_finish",
+      "can_retake",
+      "ratake_count",
+      "rataken",
+      "rating",
+      "price",
+      "price_rendered",
+      "origin_price",
+      "origin_price_rendered",
+      "sale_price",
+      "sale_price_rendered",
+      "categories",
+      "tags",
+      "instructor",
+      "sections",
+      "course_data",
+      "meta_data"
+    ]
+  }
+}
