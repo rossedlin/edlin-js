@@ -1,6 +1,6 @@
 {
   "name": "edlin-js",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "Ross Edlin <code@codewithross.com>",
   "homepage": "https://www.codewithross.com/",
   "license": "MIT",
@@ -14,5 +14,8 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "json-schema-library": "^10.0.0-rc2"
   }
 }
